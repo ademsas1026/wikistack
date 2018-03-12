@@ -9,9 +9,7 @@ const Sequelize = require('sequelize');
 const bodyParser = require('body-parser')
 
 
-//body-parsing middleware
-router.use(bodyParser.urlencoded({ extended: true }));
-router.use(bodyParser.json());
+
 
 router.get('/', (req, res, next) => {
     // res.redirect('/');
